@@ -1,5 +1,3 @@
-<!-- DRAFT: section 7 race numbers are added when the Docker run is done. Remove this line when final. -->
-
 # Foreman
 
 **A crew of AI coding agents that fix 10 planted bugs in a copy of TinyDB, coordinating through one FalkorDB graph.**
@@ -188,7 +186,14 @@ Scripts need no model key.
 | `foreman-schema/load_test.py` | 100 workers claiming, 50 workers finishing 300 tickets, mixed reads and writes, the conflict rule with the real tickets, 5 repos at once. Result in `load_test_results.md` |
 | `foreman-db-setup/check_persistence.sh` | Stops and restarts the database container and checks the graph and the run are still there |
 
-RACE_RESULTS_PLACEHOLDER
+Result from our run against FalkorDB in Docker (`race_results.md`):
+
+| Claim | Rounds with exactly one winner | Most workers told "yours" in one round | p50 (ms) | p95 (ms) |
+|---|---|---|---|---|
+| Atomic claim (the product) | 20 of 20 | 1 | 21.2 | 24.3 |
+| Naive "look, then take" | 0 of 20 | 50 | 64.1 | 68.1 |
+
+With the naive claim, all 50 workers were told they own the ticket in every round. With the atomic claim, exactly one was, every time. Timings are from one laptop and will differ on other machines.
 
 ## 8. Run it
 
@@ -214,7 +219,7 @@ cp .env.example .env            # then put your own NVIDIA key in .env (never co
 QUICK=1 ./run_all.sh            # one worker, one ticket, about 3 minutes: checks everything is connected
 ```
 
-**Tests without a key** (a pretend model makes the tool calls): `FALKORDB_PORT=6379 python test_crew.py --seeded ../tinydb --kit ../a2-eval-kit` and the other `test_*.py` files.
+**Tests without a key** (a pretend model makes the tool calls): the `foreman-code/test_*.py` files. Some of them need the answer-key kit (`--kit ../a2-eval-kit`: the reference fixes for the 10 planted bugs). We keep that kit out of this repository on purpose, so the agents can never see the answers. The crew itself (`run_all.sh`) does not need it.
 
 **The comparison**: see `foreman-code/EVAL.md`.
 
