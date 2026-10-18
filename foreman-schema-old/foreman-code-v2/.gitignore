@@ -1,0 +1,6 @@
+.env
+.llm_cache.sqlite
+llm_calls.jsonl
+work/
+run_report*.json
+__pycache__/

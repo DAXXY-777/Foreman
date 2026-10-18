@@ -1,0 +1,18 @@
+# Starts the FalkorDB database (port 6379) and its browser tool (port 3000).
+# Data is saved in a Docker volume called "falkordb_data", so it survives restarts.
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: foreman-falkordb
+    ports:
+      - "127.0.0.1:6379:6379"   # the database (only reachable from your own computer)
+      - "127.0.0.1:3000:3000"   # the browser tool for looking at the graph
+    environment:
+      # keep a log of every change on disk, in the /data folder
+      - REDIS_ARGS=--appendonly yes --appendfsync everysec --dir /data
+    volumes:
+      - falkordb_data:/data
+    restart: unless-stopped
+
+volumes:
+  falkordb_data:

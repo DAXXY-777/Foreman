@@ -1,0 +1,127 @@
+{
+ "before_after": [
+  {
+   "label": "Run 4, before our fixes",
+   "approved": 6,
+   "total": 10,
+   "seconds": 5406
+  },
+  {
+   "label": "Run 5, after",
+   "approved": 10,
+   "total": 10,
+   "seconds": 1772
+  }
+ ],
+ "setups": [
+  {
+   "id": "none",
+   "name": "No coordination",
+   "solved": 9,
+   "total": 10,
+   "collisions": 1,
+   "rework": 1.5,
+   "recovered": "0 of 2",
+   "recovered_pct": 0.0,
+   "runs": 2,
+   "minutes": 32.7,
+   "duplicate": 0,
+   "stalled": 2
+  },
+  {
+   "id": "graph",
+   "name": "Graph only",
+   "solved": 9,
+   "total": 10,
+   "collisions": 0,
+   "rework": 8,
+   "recovered": "2 of 2",
+   "recovered_pct": 100.0,
+   "runs": 2,
+   "minutes": 35.4,
+   "duplicate": 1.5,
+   "stalled": 0
+  },
+  {
+   "id": "full",
+   "name": "Graph + memory",
+   "solved": 9.5,
+   "total": 10,
+   "collisions": 0,
+   "rework": 4.5,
+   "recovered": "2 of 2",
+   "recovered_pct": 100.0,
+   "runs": 2,
+   "minutes": 42.3,
+   "duplicate": 1,
+   "stalled": 0
+  }
+ ],
+ "repeats": 2,
+ "runs_detail": [
+  {
+   "run": "eval-full-1",
+   "mode": "full",
+   "fixed": 10,
+   "duplicate": 2,
+   "stalled": false,
+   "minutes": 34.4
+  },
+  {
+   "run": "eval-full-2",
+   "mode": "full",
+   "fixed": 9,
+   "duplicate": 0,
+   "stalled": false,
+   "minutes": 50.2
+  },
+  {
+   "run": "eval-graph-1",
+   "mode": "graph",
+   "fixed": 10,
+   "duplicate": 0,
+   "stalled": false,
+   "minutes": 20.6
+  },
+  {
+   "run": "eval-graph-2",
+   "mode": "graph",
+   "fixed": 8,
+   "duplicate": 3,
+   "stalled": false,
+   "minutes": 50.2
+  },
+  {
+   "run": "eval-none-1",
+   "mode": "none",
+   "fixed": 9,
+   "duplicate": 0,
+   "stalled": true,
+   "minutes": 20.7
+  },
+  {
+   "run": "eval-none-2",
+   "mode": "none",
+   "fixed": 9,
+   "duplicate": 0,
+   "stalled": true,
+   "minutes": 44.7
+  }
+ ],
+ "load": {
+  "workers": 100,
+  "rounds": 10,
+  "winners_ok": "10 of 10",
+  "atomicDouble": 0,
+  "p50_ms": 93.2,
+  "naiveDouble": 49
+ },
+ "race": {
+  "workers": 50,
+  "rounds": 20,
+  "atomic_ok": 20,
+  "naive_ok": 0,
+  "naive_worst": 50,
+  "p50_ms": 21.2
+ }
+}

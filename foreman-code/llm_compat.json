@@ -1,0 +1,34 @@
+{
+  "nvidia/nemotron-3-super-120b-a12b": {
+    "results": {
+      "smoke call": true,
+      "tool call": true,
+      "tool round trip": true,
+      "median_s": 1.8,
+      "max_s": 3.1,
+      "latency": true
+    },
+    "notes": {
+      "smoke call": "'OK'",
+      "tool call": "tool_calls=[('get_footprint', {'task_id': 'T-07'})]",
+      "tool round trip": "'Task T-07 will touch the following file:\\n\\n- `tinydb/table.py'",
+      "latency": "median 1.8 s, slowest 3.1 s over 5 tool calls"
+    }
+  },
+  "openai/gpt-oss-20b": {
+    "results": {
+      "smoke call": true,
+      "tool call": true,
+      "tool round trip": true,
+      "median_s": 1.5,
+      "max_s": 3.2,
+      "latency": true
+    },
+    "notes": {
+      "smoke call": "'OK'",
+      "tool call": "tool_calls=[('get_footprint', {'task_id': 'T-07'})]",
+      "tool round trip": "'Task **T-07** will touch the following file:\\n\\n- `tinydb/tabl'",
+      "latency": "median 1.5 s, slowest 3.2 s over 5 tool calls"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "atomic": {
+    "winners_per_round": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rounds_with_exactly_one_winner": 20,
+    "worst_round": 1,
+    "p50_ms": 21.2,
+    "p95_ms": 24.3
+  },
+  "naive": {
+    "winners_per_round": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "rounds_with_exactly_one_winner": 0,
+    "worst_round": 50,
+    "p50_ms": 64.1,
+    "p95_ms": 68.1
+  }
+}

@@ -1,0 +1,2741 @@
+[
+  {
+    "run_id": "eval-full-1",
+    "mode": "full",
+    "workers": 3,
+    "seconds": 2063.8,
+    "timed_out": false,
+    "stalled": false,
+    "approved": 10,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-05": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": "dec-1118"
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 16,
+      "claims_refused": {
+        "already_claimed": 3,
+        "conflict_active": 12
+      },
+      "claims_attempted": 31,
+      "double_claims": 0,
+      "collisions": 2,
+      "reworks": 0,
+      "handoffs_recovered": 2
+    },
+    "llm": {
+      "calls": 328,
+      "cached": 0,
+      "retries": 0,
+      "fallbacks": 0
+    },
+    "tool_refusals": 0,
+    "work": [
+      {
+        "task": "T-06",
+        "worker": "w3",
+        "steps": 6,
+        "tokens": 19494,
+        "t_start": 1792316832.05,
+        "t_end": 1792316861.4,
+        "seconds": 29.3,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-05",
+        "worker": "w3",
+        "steps": 7,
+        "tokens": 35758,
+        "t_start": 1792316861.42,
+        "t_end": 1792316918.15,
+        "seconds": 56.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 17,
+        "tokens": 147046,
+        "t_start": 1792316832.05,
+        "t_end": 1792316991.98,
+        "seconds": 159.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w3",
+        "steps": 17,
+        "tokens": 130172,
+        "t_start": 1792316918.18,
+        "t_end": 1792317055.12,
+        "seconds": 136.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 47663,
+        "t_start": 1792316992.0,
+        "t_end": 1792317064.9,
+        "seconds": 72.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 52377,
+        "t_start": 1792317064.92,
+        "t_end": 1792317105.46,
+        "seconds": 40.5,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w3",
+        "steps": 7,
+        "tokens": 35742,
+        "t_start": 1792317055.15,
+        "t_end": 1792317133.15,
+        "seconds": 78.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 14,
+        "tokens": 80752,
+        "t_start": 1792317133.18,
+        "t_end": 1792317254.56,
+        "seconds": 121.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-10",
+          "mem-9"
+        ]
+      },
+      {
+        "task": "T-01",
+        "worker": "w2",
+        "steps": 15,
+        "tokens": 130372,
+        "t_start": 1792317105.49,
+        "t_end": 1792317345.09,
+        "seconds": 239.6,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-10",
+          "mem-9"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 592535,
+        "t_start": 1792317646.56,
+        "t_end": 1792318008.95,
+        "seconds": 362.4,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": [
+          "mem-13",
+          "mem-14",
+          "mem-15",
+          "mem-18",
+          "mem-19"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 35,
+        "tokens": 627127,
+        "t_start": 1792317345.12,
+        "t_end": 1792318114.64,
+        "seconds": 769.5,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": [
+          "mem-13",
+          "mem-14",
+          "mem-15",
+          "mem-18",
+          "mem-19"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 322490,
+        "t_start": 1792318008.98,
+        "t_end": 1792318242.92,
+        "seconds": 233.9,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": [
+          "mem-13",
+          "mem-14",
+          "mem-15",
+          "mem-18",
+          "mem-19"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 21,
+        "tokens": 173955,
+        "t_start": 1792318446.44,
+        "t_end": 1792318828.68,
+        "seconds": 382.2,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": [
+          "mem-13",
+          "mem-14",
+          "mem-15",
+          "mem-18",
+          "mem-19"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 3,
+        "tokens": 11824,
+        "t_start": 1792318828.71,
+        "t_end": 1792318842.66,
+        "seconds": 13.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-13",
+          "mem-14",
+          "mem-15",
+          "mem-18",
+          "mem-19"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8507,
+        "seconds": 17.6,
+        "reasons": []
+      },
+      {
+        "task": "T-05",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5377,
+        "seconds": 15.2,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5793,
+        "seconds": 12.7,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8395,
+        "seconds": 63.1,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7312,
+        "seconds": 23.3,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7691,
+        "seconds": 18.5,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5355,
+        "seconds": 10.4,
+        "reasons": []
+      },
+      {
+        "task": "T-07",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8226,
+        "seconds": 12.4,
+        "reasons": []
+      },
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 6068,
+        "seconds": 31.6,
+        "reasons": []
+      },
+      {
+        "task": "T-04",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 11283,
+        "seconds": 28.5,
+        "reasons": []
+      }
+    ],
+    "memory": [
+      {
+        "task": "T-06",
+        "steps": 4,
+        "tokens": 9806,
+        "seconds": 54.0
+      },
+      {
+        "task": "T-05",
+        "steps": 2,
+        "tokens": 4475,
+        "seconds": 13.6
+      },
+      {
+        "task": "T-03",
+        "steps": 3,
+        "tokens": 7059,
+        "seconds": 28.6
+      },
+      {
+        "task": "T-10",
+        "steps": 4,
+        "tokens": 9828,
+        "seconds": 52.9
+      },
+      {
+        "task": "T-08",
+        "steps": 3,
+        "tokens": 7061,
+        "seconds": 22.4
+      },
+      {
+        "task": "T-02",
+        "steps": 4,
+        "tokens": 8841,
+        "seconds": 15.5
+      },
+      {
+        "task": "T-09",
+        "steps": 2,
+        "tokens": 4459,
+        "seconds": 10.7
+      },
+      {
+        "task": "T-07",
+        "steps": 4,
+        "tokens": 10388,
+        "seconds": 33.4
+      },
+      {
+        "task": "T-01",
+        "steps": 4,
+        "tokens": 11175,
+        "seconds": 26.9
+      },
+      {
+        "task": "T-04",
+        "steps": 3,
+        "tokens": 8204,
+        "seconds": 17.7
+      }
+    ],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-08",
+        "at": 1792316873.16
+      }
+    ],
+    "errors": [],
+    "eval": {
+      "approved": 10,
+      "merged_ok": 10,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 10,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-04",
+        "T-05",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 227,
+      "tests_failing_merged": 0,
+      "duplicate_work": 2,
+      "conflicting_tickets_worked_together": 0,
+      "worker_sessions": 14,
+      "wasted_sessions": 4,
+      "sent_back_by_reviewer": 0,
+      "tokens": 2562610,
+      "crashed_task": "T-08",
+      "crash_recovered": true
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w2__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w2__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w2__T-03.patch",
+      "T-04": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w2__T-04.patch",
+      "T-05": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w3__T-05.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w3__T-06.patch",
+      "T-07": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w3__T-07.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w2__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w3__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-1/patches/w3__T-10.patch"
+    }
+  },
+  {
+    "run_id": "eval-full-2",
+    "mode": "full",
+    "workers": 3,
+    "seconds": 3010.6,
+    "timed_out": true,
+    "stalled": false,
+    "approved": 9,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "submitted",
+        "attempts": 0
+      },
+      "T-05": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": "dec-1252"
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 19,
+      "claims_refused": {
+        "already_claimed": 6,
+        "conflict_active": 22
+      },
+      "claims_attempted": 47,
+      "double_claims": 0,
+      "collisions": 1,
+      "reworks": 0,
+      "handoffs_recovered": 5
+    },
+    "llm": {
+      "calls": 313,
+      "cached": 0,
+      "retries": 933,
+      "fallbacks": 182
+    },
+    "tool_refusals": 33,
+    "work": [
+      {
+        "task": "T-06",
+        "worker": "w3",
+        "steps": 11,
+        "tokens": 34054,
+        "t_start": 1792326185.23,
+        "t_end": 1792326444.74,
+        "seconds": 259.5,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 13,
+        "tokens": 80647,
+        "t_start": 1792326185.22,
+        "t_end": 1792326635.32,
+        "seconds": 450.1,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w3",
+        "steps": 10,
+        "tokens": 29942,
+        "t_start": 1792326444.76,
+        "t_end": 1792326800.38,
+        "seconds": 355.6,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 7,
+        "tokens": 38896,
+        "t_start": 1792326635.34,
+        "t_end": 1792326831.78,
+        "seconds": 196.4,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w3",
+        "steps": 7,
+        "tokens": 33457,
+        "t_start": 1792326800.41,
+        "t_end": 1792326870.42,
+        "seconds": 70.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 12,
+        "tokens": 79869,
+        "t_start": 1792326831.81,
+        "t_end": 1792327116.05,
+        "seconds": 284.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-05",
+        "worker": "w3",
+        "steps": 8,
+        "tokens": 37205,
+        "t_start": 1792327045.7,
+        "t_end": 1792327254.75,
+        "seconds": 209.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w2",
+        "steps": 6,
+        "tokens": 20659,
+        "t_start": 1792327116.08,
+        "t_end": 1792327290.53,
+        "seconds": 174.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w3",
+        "steps": 17,
+        "tokens": 105133,
+        "t_start": 1792327254.78,
+        "t_end": 1792327746.14,
+        "seconds": 491.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w2",
+        "steps": 9,
+        "tokens": 36676,
+        "t_start": 1792327626.42,
+        "t_end": 1792327773.17,
+        "seconds": 146.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 16,
+        "tokens": 101888,
+        "t_start": 1792327773.2,
+        "t_end": 1792328124.33,
+        "seconds": 351.1,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-34",
+          "mem-35"
+        ]
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 22,
+        "tokens": 201441,
+        "t_start": 1792327746.17,
+        "t_end": 1792328313.43,
+        "seconds": 567.3,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-32",
+          "mem-33",
+          "mem-34",
+          "mem-35"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w3",
+        "steps": 33,
+        "tokens": 473027,
+        "t_start": 1792328313.46,
+        "t_end": 1792329139.99,
+        "seconds": 826.5,
+        "loop": "finished",
+        "task_status": "open",
+        "used_memory": [
+          "mem-32",
+          "mem-33",
+          "mem-42",
+          "mem-44",
+          "mem-45"
+        ]
+      },
+      {
+        "task": "T-04",
+        "worker": "w3",
+        "steps": 3,
+        "tokens": 11737,
+        "t_start": 1792329140.07,
+        "t_end": 1792329183.33,
+        "seconds": 43.3,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": [
+          "mem-32",
+          "mem-33",
+          "mem-42",
+          "mem-44",
+          "mem-45"
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 2814,
+        "seconds": 78.5,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "submitted",
+        "steps": 8,
+        "tokens": 16585,
+        "seconds": 261.8,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 3644,
+        "seconds": 38.6,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7471,
+        "seconds": 139.5,
+        "reasons": []
+      },
+      {
+        "task": "T-05",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 6061,
+        "seconds": 106.8,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 3156,
+        "seconds": 58.8,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "submitted",
+        "steps": 8,
+        "tokens": 14039,
+        "seconds": 211.2,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 2965,
+        "seconds": 59.4,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 5453,
+        "seconds": 136.6,
+        "reasons": []
+      },
+      {
+        "task": "T-07",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 3196,
+        "seconds": 36.9,
+        "reasons": []
+      },
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 7,
+        "tokens": 18959,
+        "seconds": 289.0,
+        "reasons": []
+      }
+    ],
+    "memory": [
+      {
+        "task": "T-06",
+        "steps": 3,
+        "tokens": 4261,
+        "seconds": 98.8
+      },
+      {
+        "task": "T-08",
+        "steps": 3,
+        "tokens": 6198,
+        "seconds": 56.2
+      },
+      {
+        "task": "T-03",
+        "steps": 3,
+        "tokens": 6456,
+        "seconds": 77.6
+      },
+      {
+        "task": "T-05",
+        "steps": 3,
+        "tokens": 4393,
+        "seconds": 100.0
+      },
+      {
+        "task": "T-10",
+        "steps": 3,
+        "tokens": 5215,
+        "seconds": 73.5
+      },
+      {
+        "task": "T-09",
+        "steps": 3,
+        "tokens": 5129,
+        "seconds": 95.8
+      },
+      {
+        "task": "T-02",
+        "steps": 3,
+        "tokens": 5197,
+        "seconds": 75.0
+      },
+      {
+        "task": "T-07",
+        "steps": 3,
+        "tokens": 5657,
+        "seconds": 72.9
+      },
+      {
+        "task": "T-01",
+        "steps": 3,
+        "tokens": 7136,
+        "seconds": 75.2
+      }
+    ],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-08",
+        "at": 1792326334.71
+      }
+    ],
+    "errors": [
+      "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 181, in _one_model\n    text, calls, msg, usage, problem = self._parse(data)\n                                       ~~~~~~~~~~~^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 153, in _parse\n    msg = data[\"choices\"][0][\"message\"]\n          ~~~~^^^^^^^^^^^\nKeyError: 'choices'\n",
+      "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 181, in _one_model\n    text, calls, msg, usage, problem = self._parse(data)\n                                       ~~~~~~~~~~~^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 153, in _parse\n    msg = data[\"choices\"][0][\"message\"]\n          ~~~~^^^^^^^^^^^\nKeyError: 'choices'\n",
+      "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 181, in _one_model\n    text, calls, msg, usage, problem = self._parse(data)\n                                       ~~~~~~~~~~~^^^^^^\n  File \"/Users/prerna/Desktop/Foreman/foreman-code/llm.py\", line 153, in _parse\n    msg = data[\"choices\"][0][\"message\"]\n          ~~~~^^^^^^^^^^^\nKeyError: 'choices'\n"
+    ],
+    "eval": {
+      "approved": 9,
+      "merged_ok": 9,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 9,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-05",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 224,
+      "tests_failing_merged": 3,
+      "duplicate_work": 0,
+      "conflicting_tickets_worked_together": 0,
+      "worker_sessions": 14,
+      "wasted_sessions": 5,
+      "sent_back_by_reviewer": 2,
+      "tokens": 1418616,
+      "crashed_task": "T-08",
+      "crash_recovered": true
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w2__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w2__T-03.patch",
+      "T-04": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-04.patch",
+      "T-05": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-05.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-06.patch",
+      "T-07": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w2__T-07.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w3__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-full-2/patches/w2__T-10.patch"
+    }
+  },
+  {
+    "run_id": "eval-graph-1",
+    "mode": "graph",
+    "workers": 3,
+    "seconds": 1234.3,
+    "timed_out": false,
+    "stalled": false,
+    "approved": 10,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-05": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": "dec-1079"
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 14,
+      "claims_refused": {
+        "already_claimed": 3
+      },
+      "claims_attempted": 17,
+      "double_claims": 0,
+      "collisions": 2,
+      "reworks": 0,
+      "handoffs_recovered": 4
+    },
+    "llm": {
+      "calls": 252,
+      "cached": 0,
+      "retries": 0,
+      "fallbacks": 0
+    },
+    "tool_refusals": 0,
+    "work": [
+      {
+        "task": "T-08",
+        "worker": "w3",
+        "steps": 9,
+        "tokens": 50041,
+        "t_start": 1792315597.02,
+        "t_end": 1792315649.68,
+        "seconds": 52.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-05",
+        "worker": "w3",
+        "steps": 8,
+        "tokens": 42173,
+        "t_start": 1792315649.71,
+        "t_end": 1792315717.21,
+        "seconds": 67.5,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w3",
+        "steps": 14,
+        "tokens": 102144,
+        "t_start": 1792315717.24,
+        "t_end": 1792315860.17,
+        "seconds": 142.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 19,
+        "tokens": 151943,
+        "t_start": 1792315597.01,
+        "t_end": 1792315888.93,
+        "seconds": 291.9,
+        "loop": "finished",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-06",
+        "worker": "w3",
+        "steps": 12,
+        "tokens": 51468,
+        "t_start": 1792315860.2,
+        "t_end": 1792315962.32,
+        "seconds": 102.1,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w3",
+        "steps": 8,
+        "tokens": 39824,
+        "t_start": 1792315962.34,
+        "t_end": 1792316030.52,
+        "seconds": 68.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 16,
+        "tokens": 128398,
+        "t_start": 1792315889.01,
+        "t_end": 1792316074.13,
+        "seconds": 185.1,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w3",
+        "steps": 11,
+        "tokens": 60919,
+        "t_start": 1792316030.55,
+        "t_end": 1792316086.45,
+        "seconds": 55.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 66347,
+        "t_start": 1792316074.16,
+        "t_end": 1792316168.38,
+        "seconds": 94.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 21,
+        "tokens": 190268,
+        "t_start": 1792316086.48,
+        "t_end": 1792316457.82,
+        "seconds": 371.3,
+        "loop": "finished",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 35,
+        "tokens": 365997,
+        "t_start": 1792316168.4,
+        "t_end": 1792316479.32,
+        "seconds": 310.9,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 20,
+        "tokens": 142668,
+        "t_start": 1792316457.89,
+        "t_end": 1792316695.05,
+        "seconds": 237.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 28,
+        "tokens": 235246,
+        "t_start": 1792316479.35,
+        "t_end": 1792316813.19,
+        "seconds": 333.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7159,
+        "seconds": 16.3,
+        "reasons": []
+      },
+      {
+        "task": "T-05",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7375,
+        "seconds": 15.3,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5398,
+        "seconds": 16.0,
+        "reasons": []
+      },
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5443,
+        "seconds": 14.1,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5357,
+        "seconds": 9.5,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5833,
+        "seconds": 14.0,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5404,
+        "seconds": 21.9,
+        "reasons": []
+      },
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 10501,
+        "seconds": 33.9,
+        "reasons": []
+      },
+      {
+        "task": "T-07",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8103,
+        "seconds": 21.6,
+        "reasons": []
+      },
+      {
+        "task": "T-04",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 9286,
+        "seconds": 16.1,
+        "reasons": []
+      }
+    ],
+    "memory": [],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-06",
+        "at": 1792315659.5
+      }
+    ],
+    "errors": [],
+    "eval": {
+      "approved": 10,
+      "merged_ok": 10,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 10,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-04",
+        "T-05",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 227,
+      "tests_failing_merged": 0,
+      "duplicate_work": 0,
+      "conflicting_tickets_worked_together": 0,
+      "worker_sessions": 13,
+      "wasted_sessions": 3,
+      "sent_back_by_reviewer": 0,
+      "tokens": 1697295,
+      "crashed_task": "T-06",
+      "crash_recovered": true
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w2__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w2__T-03.patch",
+      "T-04": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w2__T-04.patch",
+      "T-05": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-05.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-06.patch",
+      "T-07": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-07.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-1/patches/w3__T-10.patch"
+    }
+  },
+  {
+    "run_id": "eval-graph-2",
+    "mode": "graph",
+    "workers": 3,
+    "seconds": 3010.4,
+    "timed_out": true,
+    "stalled": false,
+    "approved": 8,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "open",
+        "attempts": 0
+      },
+      "T-05": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "claimed",
+        "attempts": 0
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": "dec-1194"
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 24,
+      "claims_refused": {
+        "already_claimed": 3
+      },
+      "claims_attempted": 27,
+      "double_claims": 0,
+      "collisions": 0,
+      "reworks": 0,
+      "handoffs_recovered": 3
+    },
+    "llm": {
+      "calls": 281,
+      "cached": 0,
+      "retries": 613,
+      "fallbacks": 95
+    },
+    "tool_refusals": 20,
+    "work": [
+      {
+        "task": "T-06",
+        "worker": "w3",
+        "steps": 9,
+        "tokens": 34720,
+        "t_start": 1792323174.09,
+        "t_end": 1792323320.27,
+        "seconds": 146.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w2",
+        "steps": 12,
+        "tokens": 80120,
+        "t_start": 1792323174.09,
+        "t_end": 1792323429.84,
+        "seconds": 255.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-05",
+        "worker": "w2",
+        "steps": 12,
+        "tokens": 61252,
+        "t_start": 1792323429.87,
+        "t_end": 1792323673.87,
+        "seconds": 244.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w3",
+        "steps": 25,
+        "tokens": 263717,
+        "t_start": 1792323320.3,
+        "t_end": 1792323873.26,
+        "seconds": 553.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w2",
+        "steps": 12,
+        "tokens": 56672,
+        "t_start": 1792323673.89,
+        "t_end": 1792323904.46,
+        "seconds": 230.6,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w3",
+        "steps": 8,
+        "tokens": 39106,
+        "t_start": 1792323873.29,
+        "t_end": 1792324091.39,
+        "seconds": 218.1,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w2",
+        "steps": 15,
+        "tokens": 91441,
+        "t_start": 1792323904.49,
+        "t_end": 1792324235.25,
+        "seconds": 330.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 7,
+        "tokens": 31077,
+        "t_start": 1792324091.41,
+        "t_end": 1792324297.04,
+        "seconds": 205.6,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 8,
+        "tokens": 29194,
+        "t_start": 1792324235.28,
+        "t_end": 1792324436.14,
+        "seconds": 200.9,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 7,
+        "tokens": 33612,
+        "t_start": 1792324297.07,
+        "t_end": 1792324497.12,
+        "seconds": 200.0,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 10,
+        "tokens": 49299,
+        "t_start": 1792324497.19,
+        "t_end": 1792324685.61,
+        "seconds": 188.4,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 49922,
+        "t_start": 1792324436.22,
+        "t_end": 1792324743.65,
+        "seconds": 307.4,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 10,
+        "tokens": 67501,
+        "t_start": 1792324685.69,
+        "t_end": 1792324944.0,
+        "seconds": 258.3,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 3,
+        "tokens": 11123,
+        "t_start": 1792324944.03,
+        "t_end": 1792324967.65,
+        "seconds": 23.6,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 14,
+        "tokens": 111820,
+        "t_start": 1792324743.72,
+        "t_end": 1792325068.9,
+        "seconds": 325.2,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 8,
+        "tokens": 34350,
+        "t_start": 1792324967.67,
+        "t_end": 1792325201.99,
+        "seconds": 234.3,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 14,
+        "tokens": 88542,
+        "t_start": 1792325202.07,
+        "t_end": 1792325445.11,
+        "seconds": 243.0,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 51130,
+        "t_start": 1792325068.97,
+        "t_end": 1792325647.47,
+        "seconds": 578.5,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 8,
+        "tokens": 44691,
+        "t_start": 1792325647.53,
+        "t_end": 1792325811.16,
+        "seconds": 163.6,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 8,
+        "tokens": 39573,
+        "t_start": 1792325811.23,
+        "t_end": 1792325916.96,
+        "seconds": 105.7,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w2",
+        "steps": 9,
+        "tokens": 42807,
+        "t_start": 1792325917.03,
+        "t_end": 1792326147.76,
+        "seconds": 230.7,
+        "loop": "stopped",
+        "task_status": "open",
+        "used_memory": []
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 3341,
+        "seconds": 66.9,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 4521,
+        "seconds": 67.1,
+        "reasons": []
+      },
+      {
+        "task": "T-05",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 4901,
+        "seconds": 52.1,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 2433,
+        "seconds": 57.0,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 6364,
+        "seconds": 101.2,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 2,
+        "tokens": 2393,
+        "seconds": 58.4,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 6,
+        "tokens": 10647,
+        "seconds": 144.5,
+        "reasons": []
+      },
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5892,
+        "seconds": 208.2,
+        "reasons": []
+      }
+    ],
+    "memory": [],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-03",
+        "at": 1792323220.48
+      }
+    ],
+    "errors": [],
+    "eval": {
+      "approved": 8,
+      "merged_ok": 8,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 8,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-05",
+        "T-06",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 220,
+      "tests_failing_merged": 7,
+      "duplicate_work": 3,
+      "conflicting_tickets_worked_together": 0,
+      "worker_sessions": 21,
+      "wasted_sessions": 13,
+      "sent_back_by_reviewer": 0,
+      "tokens": 1352161,
+      "crashed_task": "T-03",
+      "crash_recovered": true
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w3__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w2__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w3__T-03.patch",
+      "T-05": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w2__T-05.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w3__T-06.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w2__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w3__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-graph-2/patches/w2__T-10.patch"
+    }
+  },
+  {
+    "run_id": "eval-none-1",
+    "mode": "none",
+    "workers": 3,
+    "seconds": 1240.3,
+    "timed_out": false,
+    "stalled": true,
+    "approved": 9,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-05": {
+        "status": "claimed",
+        "attempts": 0
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": null
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 11,
+      "claims_refused": {},
+      "claims_attempted": 11,
+      "double_claims": 0,
+      "collisions": 2,
+      "reworks": 0,
+      "handoffs_recovered": 0
+    },
+    "llm": {
+      "calls": 215,
+      "cached": 0,
+      "retries": 0,
+      "fallbacks": 0
+    },
+    "tool_refusals": 0,
+    "work": [
+      {
+        "task": "T-01",
+        "worker": "w2",
+        "steps": 14,
+        "tokens": 110968,
+        "t_start": 1792314356.0,
+        "t_end": 1792314559.86,
+        "seconds": 203.9,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 59772,
+        "t_start": 1792314559.95,
+        "t_end": 1792314673.35,
+        "seconds": 113.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 313807,
+        "t_start": 1792314356.0,
+        "t_end": 1792314814.81,
+        "seconds": 458.8,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": []
+      },
+      {
+        "task": "T-04",
+        "worker": "w2",
+        "steps": 19,
+        "tokens": 170504,
+        "t_start": 1792314673.44,
+        "t_end": 1792314919.2,
+        "seconds": 245.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w2",
+        "steps": 15,
+        "tokens": 144239,
+        "t_start": 1792314919.28,
+        "t_end": 1792314988.97,
+        "seconds": 69.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-06",
+        "worker": "w2",
+        "steps": 12,
+        "tokens": 59063,
+        "t_start": 1792314989.07,
+        "t_end": 1792315100.86,
+        "seconds": 111.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 28,
+        "tokens": 251821,
+        "t_start": 1792314814.91,
+        "t_end": 1792315172.27,
+        "seconds": 357.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w2",
+        "steps": 10,
+        "tokens": 53882,
+        "t_start": 1792315100.96,
+        "t_end": 1792315186.14,
+        "seconds": 85.2,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w3",
+        "steps": 13,
+        "tokens": 68344,
+        "t_start": 1792315172.36,
+        "t_end": 1792315263.09,
+        "seconds": 90.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 22,
+        "tokens": 188334,
+        "t_start": 1792315186.23,
+        "t_end": 1792315402.01,
+        "seconds": 215.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5858,
+        "seconds": 15.7,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7903,
+        "seconds": 15.7,
+        "reasons": []
+      },
+      {
+        "task": "T-04",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5707,
+        "seconds": 15.1,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5345,
+        "seconds": 16.8,
+        "reasons": []
+      },
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5346,
+        "seconds": 10.7,
+        "reasons": []
+      },
+      {
+        "task": "T-07",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8312,
+        "seconds": 18.6,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5619,
+        "seconds": 15.2,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7412,
+        "seconds": 18.1,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 10117,
+        "seconds": 12.7,
+        "reasons": []
+      }
+    ],
+    "memory": [],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-05",
+        "at": 1792314437.25
+      }
+    ],
+    "errors": [],
+    "eval": {
+      "approved": 9,
+      "merged_ok": 9,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 9,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-04",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 225,
+      "tests_failing_merged": 2,
+      "duplicate_work": 0,
+      "conflicting_tickets_worked_together": 0,
+      "worker_sessions": 10,
+      "wasted_sessions": 1,
+      "sent_back_by_reviewer": 0,
+      "tokens": 1482353,
+      "crashed_task": "T-05",
+      "crash_recovered": false
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-03.patch",
+      "T-04": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-04.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-06.patch",
+      "T-07": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w3__T-07.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w3__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-1/patches/w2__T-10.patch"
+    }
+  },
+  {
+    "run_id": "eval-none-2",
+    "mode": "none",
+    "workers": 3,
+    "seconds": 2682.7,
+    "timed_out": false,
+    "stalled": true,
+    "approved": 9,
+    "total": 10,
+    "tasks": {
+      "T-01": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-02": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-03": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-04": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-05": {
+        "status": "claimed",
+        "attempts": 0
+      },
+      "T-06": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-07": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-08": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-09": {
+        "status": "approved",
+        "attempts": 1
+      },
+      "T-10": {
+        "status": "approved",
+        "attempts": 1
+      }
+    },
+    "plan": {
+      "order": [
+        "T-03",
+        "T-06",
+        "T-08",
+        "T-05",
+        "T-10",
+        "T-09",
+        "T-02",
+        "T-01",
+        "T-07",
+        "T-04"
+      ],
+      "waves": [
+        [
+          "T-03",
+          "T-06",
+          "T-08",
+          "T-05",
+          "T-10",
+          "T-09",
+          "T-02"
+        ],
+        [
+          "T-01",
+          "T-07"
+        ],
+        [
+          "T-04"
+        ]
+      ],
+      "conflicts": {
+        "T-01": [
+          "T-03",
+          "T-04",
+          "T-06"
+        ],
+        "T-02": [],
+        "T-03": [
+          "T-01",
+          "T-04",
+          "T-07"
+        ],
+        "T-04": [
+          "T-01",
+          "T-03",
+          "T-06"
+        ],
+        "T-05": [],
+        "T-06": [
+          "T-01",
+          "T-04"
+        ],
+        "T-07": [
+          "T-03"
+        ],
+        "T-08": [],
+        "T-09": [],
+        "T-10": []
+      },
+      "decision_id": null
+    },
+    "metrics": {
+      "ok": true,
+      "claims_granted": 12,
+      "claims_refused": {},
+      "claims_attempted": 12,
+      "double_claims": 0,
+      "collisions": 0,
+      "reworks": 0,
+      "handoffs_recovered": 0
+    },
+    "llm": {
+      "calls": 266,
+      "cached": 0,
+      "retries": 35,
+      "fallbacks": 1
+    },
+    "tool_refusals": 0,
+    "work": [
+      {
+        "task": "T-06",
+        "worker": "w3",
+        "steps": 9,
+        "tokens": 37610,
+        "t_start": 1792320490.72,
+        "t_end": 1792320540.71,
+        "seconds": 50.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-10",
+        "worker": "w2",
+        "steps": 9,
+        "tokens": 56723,
+        "t_start": 1792320490.72,
+        "t_end": 1792320557.56,
+        "seconds": 66.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-09",
+        "worker": "w2",
+        "steps": 13,
+        "tokens": 91962,
+        "t_start": 1792320557.65,
+        "t_end": 1792320694.77,
+        "seconds": 137.1,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-02",
+        "worker": "w2",
+        "steps": 19,
+        "tokens": 192341,
+        "t_start": 1792320694.86,
+        "t_end": 1792320812.69,
+        "seconds": 117.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-04",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 543831,
+        "t_start": 1792320540.8,
+        "t_end": 1792320851.75,
+        "seconds": 311.0,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-03",
+        "worker": "w2",
+        "steps": 20,
+        "tokens": 172544,
+        "t_start": 1792320812.79,
+        "t_end": 1792321007.12,
+        "seconds": 194.3,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-01",
+        "worker": "w3",
+        "steps": 16,
+        "tokens": 123358,
+        "t_start": 1792320851.85,
+        "t_end": 1792321049.25,
+        "seconds": 197.4,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-08",
+        "worker": "w2",
+        "steps": 9,
+        "tokens": 47114,
+        "t_start": 1792321007.21,
+        "t_end": 1792321065.97,
+        "seconds": 58.8,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 338674,
+        "t_start": 1792321049.35,
+        "t_end": 1792321645.1,
+        "seconds": 595.8,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 35,
+        "tokens": 272342,
+        "t_start": 1792321645.21,
+        "t_end": 1792322383.21,
+        "seconds": 738.0,
+        "loop": "max_steps",
+        "task_status": "claimed",
+        "used_memory": []
+      },
+      {
+        "task": "T-07",
+        "worker": "w3",
+        "steps": 27,
+        "tokens": 230132,
+        "t_start": 1792322383.32,
+        "t_end": 1792322981.99,
+        "seconds": 598.7,
+        "loop": "stopped",
+        "task_status": "submitted",
+        "used_memory": []
+      }
+    ],
+    "reviews": [
+      {
+        "task": "T-06",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 9137,
+        "seconds": 18.8,
+        "reasons": []
+      },
+      {
+        "task": "T-10",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5327,
+        "seconds": 17.0,
+        "reasons": []
+      },
+      {
+        "task": "T-09",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7998,
+        "seconds": 13.8,
+        "reasons": []
+      },
+      {
+        "task": "T-02",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7686,
+        "seconds": 15.2,
+        "reasons": []
+      },
+      {
+        "task": "T-04",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5703,
+        "seconds": 27.3,
+        "reasons": []
+      },
+      {
+        "task": "T-03",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 10250,
+        "seconds": 16.3,
+        "reasons": []
+      },
+      {
+        "task": "T-01",
+        "status": "approved",
+        "steps": 3,
+        "tokens": 5789,
+        "seconds": 12.7,
+        "reasons": []
+      },
+      {
+        "task": "T-08",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 7406,
+        "seconds": 15.8,
+        "reasons": []
+      },
+      {
+        "task": "T-07",
+        "status": "approved",
+        "steps": 4,
+        "tokens": 8276,
+        "seconds": 10.1,
+        "reasons": []
+      }
+    ],
+    "memory": [],
+    "crashed": [
+      {
+        "worker": "w1",
+        "task": "T-05",
+        "at": 1792320546.14
+      }
+    ],
+    "errors": [],
+    "eval": {
+      "approved": 9,
+      "merged_ok": 9,
+      "failed_to_merge": [],
+      "fixed_in_merged_code": 9,
+      "fixed_ids": [
+        "T-01",
+        "T-02",
+        "T-03",
+        "T-04",
+        "T-06",
+        "T-07",
+        "T-08",
+        "T-09",
+        "T-10"
+      ],
+      "regressions_in_merged_code": 0,
+      "tests_passing_merged": 225,
+      "tests_failing_merged": 2,
+      "duplicate_work": 0,
+      "conflicting_tickets_worked_together": 2,
+      "worker_sessions": 11,
+      "wasted_sessions": 2,
+      "sent_back_by_reviewer": 0,
+      "tokens": 2174203,
+      "crashed_task": "T-05",
+      "crash_recovered": false
+    },
+    "patches": {
+      "T-01": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w3__T-01.patch",
+      "T-02": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w2__T-02.patch",
+      "T-03": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w2__T-03.patch",
+      "T-04": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w3__T-04.patch",
+      "T-06": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w3__T-06.patch",
+      "T-07": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w3__T-07.patch",
+      "T-08": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w2__T-08.patch",
+      "T-09": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w2__T-09.patch",
+      "T-10": "/Users/prerna/Desktop/Foreman/foreman-code/work/eval-none-2/patches/w2__T-10.patch"
+    }
+  }
+]

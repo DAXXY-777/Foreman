@@ -1,0 +1,4 @@
+[
+ {"label": "Run 4, before our fixes", "approved": 6, "total": 10, "seconds": 5406},
+ {"label": "Run 5, after", "approved": 10, "total": 10, "seconds": 1772}
+]
